@@ -17,7 +17,6 @@ from email.mime.multipart import MIMEMultipart
 from typing import FrozenSet #Ya vienen preinstalados (mensaje multiparte (adjunto, asunto etc))
 
 
-
 def whatsapp():
     print("WhatsApp")
     #Webdriver
@@ -242,6 +241,7 @@ def correo():
 
     print('Correo enviado')
 
+
 menu = """
 Bienvenid@, soy tu asistente de recordatorios de citas médicas 🏥🤖
 ¿Que tipo de recordatorio deseas enviar?
@@ -251,8 +251,8 @@ Bienvenid@, soy tu asistente de recordatorios de citas médicas 🏥🤖
 
 Elige una opción: """
 
-opcion = input(menu)
 
+opcion = input(menu)
 if opcion == '1':
     whatsapp()
 elif opcion == '2':
